@@ -1,76 +1,82 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    background-image: url(./nave.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin: 0; 
-    padding: 0;
-    
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./nave.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    color: white;
-    background-color: black;
-    padding: 2%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3em;
-    text-align: center;
+  color: white;
+  background-color: black;
+  padding: 2%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3em;
+  text-align: center;
 }
 
-
 .logo {
-    display: flex;
-    margin: 0;
-    transition: 5s;
-    margin: 20%;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  transition: 5s;
+  margin: 10% auto; 
 }
 
 @keyframes filme {
-    0% {
+  0% {
       opacity: 0;
       transform: translateY(50px) scale(0.5);
-    }
-    100% {
+  }
+  100% {
       opacity: 1;
       transform: translateY(0) scale(1);
-    }
   }
-  
-  .logo {
-    animation: filme 1.5s ease-out forwards;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
-  
+}
 
-  @keyframes aparecer {
-    0% {
+.logo {
+  animation: filme 1.5s ease-out forwards;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 20px;
+  right: 350px;
+}
+
+@keyframes aparecer {
+  0% {
       opacity: 0;
       transform: translate(50%, 50%);
-    }
-    100% {
+  }
+  100% {
       opacity: 1;
       transform: translate(0, 0);
-    }
   }
-  
-  .maior {
-    width: auto;
-    height: 400px;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    animation: aparecer 1.5s ease-out forwards;
-  }
-  
+}
+
+.maior {
+  width: auto;
+  height: 400px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  animation: aparecer 1.5s ease-out forwards;
+}
+
+.pantera {
+  width: auto;
+  height: 400px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  animation: aparecer 1.5s ease-out forwards;
+}
